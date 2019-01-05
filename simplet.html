@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Angelica Mapeso">
+    <title>Angelica Mapeso: Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:200,400,400i" rel="stylesheet">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/child_page.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <img id= "logo" class = "transition home" src= "img/logo.png">
+      <img id= "hamburger" class = "transition" src="img/burger.png">
+    </header>
+    <!-- Hamburger Menu -->
+    <section id= "hamburger_menu">
+      <div id="close_wrap" class= "transition"><img id= "close" src="img/close.png"></div>
+      <div id= "menu_wrap">
+      <div id="hamburger_menu_links">
+        <a class = "hamburger_link transition home" href="index.html"><h1>Home</h1></a>
+        <a class = "hamburger_link transition about" href="about.html"><h1>About</h1></a>
+      </div>
+      <!-- Project Submenu -->
+      <h1 class="non-link">Projects</h1>
+      <div id="hamburger_submenu">
+        <a class = "hamburger_link delish transition" href="delish.html"><h3>Delish</h3><h4>Web Design, HTML & CSS</h4></a>
+        <a class = "hamburger_link simplet transition" href="simplet.html"><h3>Simplet</h3><h4>App Concept</h4></a>
+        <a class = "hamburger_link audio transition" href="audio.html"><h3>Audio Visualizer</h3><h4>C++ and OpenFrameworks</h4></a>
+        <a class = "hamburger_link compression transition" href="compression.html"><h3>Compression</h3><h4>SMIL</h4></a>
+        <a class = "hamburger_link survival transition" href="survival.html"><h3>Survival of the Fittest</h3><h4>Illustration</h4></a>
+      </div>
+      </div>
+    </section>
+    <!-- Sections of Page -->
+    <!--back of image-->
+    <div id= "main-back" class="simplet_page"></div>
+    <section id= "display">
+      <!-- main display-->
+      <div id = "main_display" class ="simplet_display">
+      </div>
+      <div id = "display_text">
+      <!--title-->
+      <h1 id = "title">Simplet</h1>
+      <h2 id = "sub_heading">App Concept</h2>
+      <!--description-->
+      <p id= "description" class="simplet_description">
+        Simplet is a concept for a student calendar app, focused on progress-tracking
+        and goal setting. The main component of the App is the “Project” feature,
+        which is a group of “Tasks” or short-term goals that a student can set for
+        each assignment. <br><br>As they complete these tasks and mark them off on the app,
+        their progress bar for the assignment or project increases. In doing so, they
+        can break down the assignment into a step-by-step plan.
+      </p>
+      <h5 class="simplet_h5">Other Features:</h5>
+      <ul class= "simplet_list">
+        <li><p>Student Collaboration to assign Tasks</p></li>
+        <li><p>Class Schedule Sharing </p></li>
+        <li><p>Class Colour Coding</p></li>
+        <li><p>Task/Event Categories to Colour Code Similar Items</p></li>
+      </ul>
+      </div>
+    </section>
+    <section class = "image_section design">
+      <div class= "section_text">
+      <h1>The Design</h1>
+      <p>As users add on more items to a calendar app, they layout can get cluttered.
+        To avoid this, all sections are organized by moveable tabs, which can be
+         expanded or hidden. Additionally, the Simplet app relies heavily on colour
+         coding as markers to represent multiple items at a time.  </p>
+      </div>
+      <div class ="image_container">
+        <div class = "image_wrap">
+        <img  class="caption_icon expand" src="img/good_images/simplet/simplet_1.png">
+        <p>Home</p>
+        </div>
+        <div class= "image_wrap">
+        <img  class="caption_icon expand" src="img/good_images/simplet/simplet_2.png">
+          <p>Day</p>
+      </div>
+      <div class = "image_wrap">
+      <img  class="caption_icon expand" src="img/good_images/simplet/simplet_3.png">
+        <p>Month</p>
+      </div>
+        <div class = "image_wrap">
+        <img  class="caption_icon expand" src="img/good_images/simplet/simplet_4.png">
+          <p>Week</p>
+        </div>
+      </div>
+    </section>
+    <section class= "image_section process">
+      <div class= "section_text">
+      <h1>The Process</h1>
+      <p>The original design was completed in October 2017 as part of an
+        Introduction to Multimedia class, where rough sketches for four screens
+        and one digital mockup was required.<br><br> It was revamped in
+        December 2018 for a more polished look and
+        extended to include 3 more digital mockups based on the previous rough designs.
+    </p>
+    </div>
+      <div class ="image_container">
+        <div class = "image_wrap">
+        <img  class="caption_icon expand" src="img/good_images/simplet/simplet_5.jpg">
+          <p>Original Home Screen</p>
+        </div>
+        <div class= "image_wrap">
+        <img class="caption_icon expand" src="img/good_images/simplet/simplet_6.jpg">
+          <p>Home Iterations</p>
+        </div>
+        <div class= "image_wrap">
+        <img class="caption_icon expand" src="img/good_images/simplet/simplet_7.jpg">
+          <p>Day Iterations</p>
+        </div>
+        <div class= "image_wrap">
+        <img class="caption_icon expand" src="img/good_images/simplet/simplet_8.jpg">
+          <p>Week/Month Iterations</p>
+        </div>
+      </div>
+    </section>
+    <section id= "image_expand">
+      <img id="expanded_image" src="">
+      <div id = "close_expand" class="transition"></div>
+    </section>
+    <!--scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/page.js"></script>
+  </body>
+</html>

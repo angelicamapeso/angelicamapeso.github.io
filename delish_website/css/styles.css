@@ -1,0 +1,938 @@
+@charset "UTF-8";
+/*************************
+          RESET
+*************************/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/**********************************************************
+                              MAIN
+***********************************************************/
+
+/*************************
+            FONTS
+*************************/
+@font-face{
+  font-family:'aileron_bold';
+  src: url('../fonts/aileron_bold_macroman/Aileron-Bold-webfont.eot');
+  src: url('../fonts/aileron_bold_macroman/Aileron-Bold-webfont.eot?iefix') format('eot'),
+       url('../fonts/aileron_bold_macroman/Aileron-Bold-webfont.woff') format('woff');
+}
+@font-face{
+  font-family:'aileron_light';
+  src: url('../fonts/aileron_light_macroman/Aileron-Light-webfont.eot');
+  src: url('../fonts/aileron_light_macroman/Aileron-Light-webfont.eot?iefix') format('eot'),
+       url('../fonts/aileron_light_macroman/Aileron-Light-webfont.woff') format('woff');
+}
+
+/**************************
+    TEXT STYLING (INITIAL)
+***************************/
+h2, h3, label, button, .pbold, legend{
+  font-family:'aileron_bold';
+}
+h2, button{
+  text-transform:uppercase;
+  font-size:20px;
+  color:#FFF;
+}
+h3{
+  font-size:18px;
+}
+p, .linkNonWhite{
+  font-family:'aileron_light';
+  font-size:16px;
+  color:#FFF;
+}
+.store-nonWhite p,
+.h2nonWhite, .pNonWhite,
+label, .linkNonWhite, legend{
+	color:#690b0c;
+}
+input, textarea, .fieldsetLabels label, #unsubscribeCheck{
+	font-family:'aileron_light';
+  font-size:16px;
+}
+.linkNonWhite{
+	text-decoration:none;
+}
+
+/*************************************************************
+                      HOMEPAGE AND GENERAL
+**************************************************************/
+.main, header{
+	flex-grow:1;
+}
+
+footer {
+	flex-grow:0.5
+}
+
+.container{
+  width:100%;
+	min-height:100%;
+}
+
+html, body{
+	height:100%;
+}
+/*************************
+        HEADER
+**************************/
+header {
+	height:150px;
+  background-size: cover;
+  background-image:url("../img/mobileHeader.png");
+
+	-webkit-align-items: stretch;
+	-ms-flex-align: stretch;
+	align-items: stretch;
+
+}
+.logo-container{
+	box-sizing:border-box;
+  width:35%;
+  padding:2%;
+  background-color: rgba(227,62,65, 0.4);
+
+	-webkit-justify-content: flex-end;
+	-ms-flex-pack: flex-end;
+  justify-content: flex-end;
+
+	-webkit-align-items: flex-end;
+	-ms-flex-align: end;
+	align-items:flex-end;
+}
+.logo{
+	height:100%;
+
+	-webkit-align-items: flex-end;
+	-ms-flex-align: end;
+	align-items:flex-end;
+}
+.logo img{
+  height:70%;
+	width:auto;
+}
+.no-background{
+	box-sizing:border-box;
+  width:65%;
+  padding:2%;
+
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+.main-nav{
+	-webkit-justify-content: flex-end;
+	-ms-flex-pack: flex-end;
+  justify-content: flex-end;
+}
+.main-nav ul{
+	display:none;
+}
+.menuIcon{
+	display:block;
+	cursor:pointer;
+}
+
+/*************************
+        MOBILE MENU
+**************************/
+.mobileBack{
+	position:fixed;
+	background-color:rgba(0,0,0,0.75);
+	width:100%;
+	height:100%;
+	z-index:1000;
+	display:none;
+}
+.mobileMenu{
+	box-sizing:border-box;
+	position:fixed;
+	width:100%;
+	height:100%;
+	background-color:#690b0c;
+	z-index:1000;
+	padding:10%;
+	display:none;
+	text-align:center;
+}
+.logoMobile img{
+	height:auto;
+	width:30%;
+}
+.closeIcon{
+	position:absolute;
+	right:5%;
+	top:5%;
+	width:30px;
+	height:auto;
+	cursor:pointer;
+}
+.mobileMenu ul{
+	text-align:center;
+	position:relative;
+	top:2%;
+}
+.mobileMenu > ul > li{
+	line-height:2;
+}
+.subMenu li a{
+	font-family:'aileron_light';
+	text-decoration:none;
+	color:#fff;
+}
+.subMenu{
+	margin-bottom:5%;
+}
+/*************************
+        ARTICLE
+**************************/
+article{
+  background-color: #FFF;
+	padding:5%;
+	box-sizing:border-box;
+
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items:center;
+}
+.articleWrap{
+	max-width:800px;
+}
+.insta-head{
+	text-decoration:none;
+}
+.description-wrap h3,
+.description-wrap p{
+	color:#690b0c;
+}
+.description-wrap{
+	padding-left:10px;
+
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+  justify-content:center;
+}
+/*************************
+        SLIDESHOW
+**************************/
+.insta-slideshow{
+	overflow:hidden;
+	position:relative;
+	width:100%;
+}
+.slide-container{
+	position:relative;
+	display:block;
+	width:200%;
+
+}
+.slide-container li{
+	display:block;
+	float:left;
+	width:25%;
+	box-sizing:border-box;
+
+}
+.img-wrap{
+	position:relative;
+	float:left;
+  border-radius:50%;
+	box-sizing:border-box;
+	margin:5px 0;
+	display:block;
+	width:90%;
+}
+.img-wrap:hover .img-overlay,
+.img-wrap:focus .img-overlay{
+  opacity:0.4;
+}
+.img-overlay{
+	top:0;
+	left:0;
+  position:absolute;
+  background-color:#690b0c;
+  opacity: 0;
+	box-sizing:border-box;
+  width:100%;
+  height:100%;
+  border-radius:inherit;
+}
+.img{
+	display:block;
+  height:auto;
+  border-radius:50%;
+	width:100%;
+}
+.next, .previous{
+	position:absolute;
+	top:45%;
+	z-index:999;
+	cursor:pointer;
+}
+.next{
+	right:0;
+}
+.previous{
+	display:none;
+}
+
+/*************************
+        ASIDE
+**************************/
+aside{
+	box-sizing:border-box;
+}
+
+/**********SEASONAL************/
+.seasonal{
+  background-color: #e33e41;
+  padding:7%;
+	text-decoration:none;
+}
+.seasonalWrap{
+	width:100%;
+	height:100%;
+
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.imgWrap_seasonal{
+	width:100%;
+
+	-webkit-justify-content: flex-end;
+	-ms-flex-pack: end;
+	justify-content:flex-end;
+}
+.seasonalimg{
+  position:relative;
+  background-image:url("../img/cake.png");
+  background-size:cover;
+  width:100px;
+  height:100px;
+  border-radius:50%;
+
+	-webkit-align-self: flex-end;
+	-ms-flex-item-align: end;
+	align-self:flex-end;
+}
+.seasonal-descrip{
+	margin-bottom:10px;
+}
+.seasonal:hover,
+.seasonal:focus{
+  background-color:#690b0c;
+}
+.seasonal:hover .seasonal-overlay,
+.seasonal:focus .seasonal-overlay{
+  opacity:0.4;
+}
+.seasonal-overlay{
+  position:absolute;
+  background-color:#690b0c;
+  opacity: 0;
+  width:100%;
+  height:100%;
+  border-radius:inherit;
+}
+/**********ONLINE ORDER************/
+.online-order{
+  position:relative;
+  text-decoration:none;
+  background-image: url("../img/cupcakes.png");
+  background-size:cover;
+  height:120px;
+}
+.online-order:hover .online-order-overlay,
+.online-order:focus .online-order-overlay{
+  opacity:0.4;
+}
+.online-order-overlay{
+  position:absolute;
+  background-color: #690b0c;
+  height:100%;
+  width:100%;
+  opacity:0;
+}
+.online-order-description{
+  position:absolute;
+  margin:7%;
+  z-index:999;
+}
+
+/*************************
+        FOOTER
+**************************/
+footer{
+  background-color: #690b0c;
+	padding:2%;
+	height:100px;
+}
+.footer-nav{
+  flex:1;
+	padding-right:10px;
+  text-align:right;
+
+	-webkit-justify-content: flex-end;
+	-ms-flex-pack: flex-end;
+  justify-content:flex-end;
+}
+.footer-nav ul li a,
+.main-nav ul li a,
+.mobileMenu > ul > li > a{
+  text-decoration:none;
+  text-transform:uppercase;
+  color:#FFF;
+  font-family:'aileron_bold';
+  font-size:16px;
+  line-height:1.6;
+}
+.footer-nav ul li a:hover,
+.main-nav ul li a:hover,
+.mobileMenu ul li a:hover,
+
+.footer-nav ul li a:focus,
+.main-nav ul li a:focus,
+.mobileMenu ul li a:focus{
+  color:#e33e41;
+}
+.store-info{
+  flex:1;
+  padding:10px;
+}
+/*************************
+    	HOVER ANIMATIONS
+**************************/
+ul li a,
+.seasonal, .seasonal-overlay,
+.online-order-overlay,
+.img-overlay, button,
+.productOverlay, .productBox{
+	-webkit-transition: all 600ms ease-in-out;
+	-moz-transition: all 600ms ease-in-out;
+	-o-transition: all 600ms ease-in-out;
+	transition: all 600ms ease-in-out;
+}
+/*************************************************************
+                    NON-HOME PAGE
+**************************************************************/
+/**************************
+		NON-HOME PAGE HEADER
+**************************/
+.headerOverwrite{
+	height:90px;
+}
+#logo-container{
+	box-sizing:border-box;
+  width:35%;
+  padding:2%;
+  background-color: rgba(227,62,65, 0.4);
+}
+#no-background{
+	box-sizing:border-box;
+	width:65%;
+	padding:2%;
+	background-color: rgba(227,62,65, 0.4);
+}
+#logo img{
+	  height:100%;
+		width:auto;
+}
+/**************************
+			BODY NON-HOME
+***************************/
+.main-nonhome{
+	width:100%;
+	max-width:768px;
+	margin:0 auto;
+	padding:5%;
+	box-sizing:border-box;
+}
+/*************************************************************
+                    	CONTACT PAGE
+**************************************************************/
+.contactHead{
+	padding-bottom:2%;
+}
+form, .contactHead{
+	max-width:500px;
+	margin: 0 auto;
+	width:100%;
+}
+form div{
+	margin:2% 0;
+}
+.h2nonWhite{
+	margin-right:5%;
+	font-size:50px;
+	line-height:0.8;
+}
+input, textarea{
+	border:1px solid #690b0c;
+}
+input:focus, textarea:focus{
+	outline:none;
+	border:1px solid #e33e41;
+}
+textarea{
+	resize:none;
+	height:250px;
+}
+fieldset{
+	border:1px solid #690b0c;
+	padding:2%;
+}
+legend{
+	padding:2%;
+}
+.fieldsetLabels{
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+  justify-content:center;
+}
+.fieldsetLabels label{
+	padding-left:15px;
+	margin-right:5%;
+	margin-bottom:2%;
+	position:relative;
+}
+input[type="checkbox"]{
+	display:none;
+}
+input:checked[type="checkbox"] + .check:after{
+	display:block;
+}
+.fieldsetLabels label:hover .check{
+	background-color: rgba(105,11,12,0.4);
+}
+.check{
+	position:absolute;
+	top:0;
+	left:0;
+	border:1px solid #690b0c;
+	width:10px;
+	height:10px;
+}
+.check:after{
+	content:"";
+	position:relative;
+	left:2px;
+	bottom:1px;
+	width:4px;
+	height:7px;
+	border-right:2px;
+	border-bottom:2px;
+	border-top:0;
+	border-left:0;
+	border-color:#690b0c;
+	border-style:solid;
+	display:none;
+
+	-webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+input[type="radio"]{
+	display:none;
+}
+input:checked[type="radio"] + .radiobox:after{
+	display:block;
+}
+.subscription:hover .radiobox{
+		background-color: rgba(105,11,12,0.4);
+}
+.subscription{
+	margin-bottom:2%;
+	position:relative;
+	padding-left:20px;
+}
+.radiobox{
+	position:absolute;
+	top:1px;
+	left:0;
+	width:10px;
+	height:10px;
+	border:1px solid #690b0c;
+	border-radius:50%;
+}
+.radiobox:after{
+	margin:auto;
+	content:"";
+	background-color:#690b0c;
+	width:inherit;
+	height:inherit;
+	border-radius:50%;
+	display:none;
+}
+button{
+	border:none;
+	width:100px;
+	height:100px;
+	padding:10px;
+	border-radius:50%;
+	background-color:#e33e41;
+	float:right;
+	cursor:pointer;
+}
+button:hover,
+button:focus{
+	background-color:#690b0c;
+}
+/*************************************************************
+                    	PRODUCTS GENERAL PAGE
+**************************************************************/
+#ourProducts{
+	padding:5%;
+	font-size:35px;
+}
+.imgProduct{
+	width:100px;
+	min-width:100px;
+	height:100px;
+	border-radius:50%;
+	margin:5%;
+	position:relative;
+}
+.productOverlay{
+	position:absolute;
+	background-color:#690b0c;
+	opacity:0;
+	width:100%;
+	height:100%;
+	border-radius:inherit;
+}
+.productBox{
+	text-decoration:none;
+	padding:5%;
+	cursor:pointer;
+
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items:center;
+
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+#seasonalBox:hover,
+#breadBox:hover,
+#dessertBox:hover,
+#snackBox:hover,
+
+#seasonalBox:focus,
+#breadBox:focus,
+#dessertBox:focus,
+#snackBox:focus{
+	background-color:rgba(227,62,65, 0.4);
+}
+.productBox:hover .productOverlay,
+.productBox:focus .productOverlay{
+	opacity:0.4;
+}
+.productBox div{
+	text-align:center;
+}
+.productBox div p,
+.productBox div a{
+	padding-bottom:3%;
+}
+.lastText{
+	margin-bottom:5%;
+}
+#seasonalBox, #dessertBox{
+	background-color:rgba(227,62,65, 0.2);
+}
+#seasonalProduct{
+	background-image:url("../img/cake.png");
+	background-size:cover;
+}
+#breadProduct{
+	background-image:url("../img/bread.png");
+	background-size:cover;
+}
+#dessertsProduct{
+	background-image:url("../img/brownie.png");
+	background-size:cover;
+}
+#snacksProduct{
+	background-image:url("../img/chocolates.png");
+	background-size:cover;
+}
+/*************************************************************
+                    	ABOUT BODY
+**************************************************************/
+#aboutBody{
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items:center;
+}
+#aboutTitle{
+	width:100%;
+	margin-bottom:5%;
+
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items:center;
+
+	-webkit-justify-content: space-around;
+	-ms-flex-pack: justify;
+	justify-content:  space-around;
+}
+#aboutHead{
+	font-size:35px;
+}
+.aboutImage{
+	min-width:150px;
+	min-height:150px;
+	border-radius:50%;
+	background-image:url("../img/brownie.png");
+	background-size:cover;
+}
+.aboutPara{
+	margin-bottom:5%;
+}
+.aboutVisit{
+	text-align:center;
+	margin-top:5%;
+}
+#map{
+	width:100%;
+	height:300px;
+}
+#maph2{
+	font-size:18px;
+	margin-bottom:2%;
+}
+#mapImage{
+	min-width:50px;
+	max-height:50px;
+	background-image: url("../img/cake.png");
+	background-size:cover;
+	border-radius:50%;
+	margin:2%;
+}
+.ph2{
+	font-size:12px;
+}
+/*************************************************************
+                      MAJOR LAYOUT & FLEXBOX
+**************************************************************/
+/************************
+        FLEXBOX
+*************************/
+div, .seasonal,
+header, .logo-container, .logo, .no-background, .main-nav,
+article, .insta-wrap, .insta-head, .description-wrap,
+aside, .productBox,
+footer, .footer-nav{
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+div, .seasonal,
+.no-background,
+article, .description-wrap, .subscription,
+aside {
+  -wekit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.contactHead, .productBox, .seasonalWrap,
+#aboutTitle, .fieldsetLabels, .delishMessage,
+footer{
+  -wekit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+/************************
+      MEDIA QUERIES
+*************************/
+@media screen and (min-width:480px){
+	/********HOME *********/
+	header{
+		height:200px;
+	}
+	.headerOverwrite{
+		height:150px;
+	}
+	article{
+		-webkit-order: 2;
+		-ms-flex-order: 2;
+		order:2;
+	}
+	aside{
+		-webkit-order: 2;
+		-ms-flex-order: 2;
+		order:1;
+	}
+	.seasonal{
+		-webkit-flex:1;
+		-ms-flex:1;
+		flex:1;
+	}
+	.seasonalimg{
+		width:100px;
+		height:100px;
+	}
+	.online-order{
+		-webkit-flex:1;
+		-ms-flex:1;
+		flex:1;
+	}
+	.main{
+		-wekit-flex-direction: row;
+	  -ms-flex-direction: row;
+		flex-direction:row;
+	}
+	.mobileMenu{
+		width:50%;
+		right:0;
+		display:none;
+	}
+	.mobileBack{
+		display:none;
+	}
+	.logoMobile img{
+			width:70%;
+	}
+	h2{
+		font-size:28px;
+	}
+	h3{
+		font-size:24px;
+	}
+	/********PRODUCT PAGE *********/
+	#ourProducts{
+		font-size:50px;
+		padding-top:0;
+	}
+	.productBox{
+		width:48%;
+		margin:1%;
+		box-sizing:border-box;
+
+		-wekit-flex-direction: column;
+	  -ms-flex-direction: column;
+	  flex-direction: column;
+	}
+	#breadBox, #snackBox{
+		background-color:rgba(227,62,65, 0.2);
+	}
+	#products{
+		-wekit-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
+
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+	/********ABOUT PAGE *********/
+	.aboutImage{
+		min-width:200px;
+		min-height:200px;
+	}
+	#aboutHead{
+		font-size:50px;
+	}
+
+}
+@media screen and (min-width:768px){
+	/********HOME *********/
+	.slide-container{
+		width:135%;
+	}
+	.menuIcon{
+		display:none;
+	}
+	.main-nav{
+		width:100%;
+	}
+	.main-nav ul{
+		width:100%;
+		position:relative;
+		display:block;
+
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+
+		-webkit-justify-content: flex-end;
+		-ms-flex-pack: flex-end;
+		justify-content: flex-end;
+	}
+	.main-nav ul li{
+		margin-right:2.5%;
+	}
+	.seasonalimg{
+		width:100px;
+		height:100px;
+	}
+	h2{
+		font-size:35px;
+	}
+	h3{
+		font-size:24px;
+	}
+	p{
+		font-size:20px;
+	}
+}
+@media screen and (min-width:1000px){
+	.seasonalimg{
+		width:180px;
+		height:180px;
+	}
+}

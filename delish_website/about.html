@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Delish - Pastry Shoppe</title>
+    <meta name="description" content="Delish: A new bakery in Ottawa, ready to handle your sweet tooth cravings!">
+    <meta name="keyword" content="delish, bakery, ottawa, pastry">
+    <meta name="author" content="Angelica Mapeso">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <!--MOBILE MENU-->
+    <span class="mobileBack">
+    </span>
+    <section class ="mobileMenu">
+      <img class="closeIcon" src="img/closeIcon.png" alt="Closing Icon">
+      <a class ="logoMobile" href="index.html"><img src="img/deslishLogo.png" alt="Delish Logo"></a>
+      <ul>
+        <li><a href="products.html">Our Products</a>
+          <ul class="subMenu">
+            <li><a href="products.html">Seasonal</a></li>
+            <li><a href="products.html">Bread</a></li>
+            <li><a href="products.html">Desserts</a></li>
+            <li><a href="products.html">Snacks</a></li>
+          </ul>
+        </li>
+        <li><a href="orderonline.html">Order Online</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+  </section>
+  <!--CONTAINER FOR ENTIRE WEBSITE-->
+    <div class="container">
+      <header class="headerOverwrite">
+        <section id="logo-container">
+          <a id="logo" href="index.html"><img src="img/deslishLogo.png" alt="Delish Logo"></a>
+        </section>
+        <section id="no-background">
+          <nav class="main-nav">
+            <!--HAMBURGER MENU AND NORMAL MENU WILL BE HIDDEN/SHOWN BASED ON BREAKPOINT-->
+            <img class="menuIcon" id="menuIcon" src="img/hamburgermenu.png" alt="Hamburger Menu">
+            <ul>
+              <li><a href="products.html">Our Products</a></li>
+              <li><a href="orderonline.html">Order Online</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </section>
+      </header>
+      <!--ABOUT SECTION
+        Made up of Heading, Paragraphs and Map
+      -->
+      <div id="aboutBody" class="main-nonhome">
+        <div id="aboutTitle">
+          <h2 class="h2nonWhite" id="aboutHead">We've <br>got a <span style="color:#e33e41">Major</span><br>Sweet tooth</h2>
+          <div class="aboutImage brownie"></div>
+        </div>
+        <p class="pNonWhite aboutPara">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo aliquam est sit amet lobortis. Nullam ullamcorper eros vel tellus suscipit, sed eleifend diam vehicula. Etiam sagittis erat urna, et viverra lacus pretium et. Donec dignissim dolor sed dui lacinia, a porta massa efficitur. Maecenas gravida tortor odio. Maecenas imperdiet tortor a magna pulvinar imperdiet. Suspendisse bibendum leo nisi, ut vehicula metus hendrerit dapibus.
+        </p>
+        <p class="pNonWhite aboutPara">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo aliquam est sit amet lobortis. Nullam ullamcorper eros vel tellus suscipit, sed eleifend diam vehicula. Etiam sagittis erat urna, et viverra lacus pretium et. Donec dignissim dolor sed dui lacinia, a porta massa efficitur. Maecenas gravida tortor odio. Maecenas imperdiet tortor a magna pulvinar imperdiet. Suspendisse bibendum leo nisi, ut vehicula metus hendrerit dapibus.
+        </p>
+        <!--DIV FOR MAP-->
+      </div>
+      <div id="map"></div>
+      <footer>
+          <nav class="footer-nav">
+            <!--FOOTER MENU-->
+            <ul>
+              <li><a href="products.html">Our Products</a></li>
+              <li><a href="orderonline.html">Order Online</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <!--FOOTER INFORMATION-->
+          <section class="store-info">
+            <p style="font-family:aileron_bold;">Store Hours</p>
+            <p><span style="font-family:aileron_bold;">Mon - Fri:</span>7AM - 6PM</p>
+            <p><span style="font-family:aileron_bold;">Sat - Sun:</span>9AM - 7PM</p>
+            <p><span style="font-family:aileron_bold;">221 Baker Street,</span>Ottawa ON</p>
+          </section>
+      </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/about.js"></script>
+    <script type="text/javascript" src="js/credit.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBASH1npP2jtEsCUcoKBINMp3LeTBtT_XY&callback=initMap">
+    </script>
+  </body>
+</html>

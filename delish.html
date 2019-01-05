@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Angelica Mapeso">
+    <title>Angelica Mapeso: Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:200,400,400i" rel="stylesheet">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/child_page.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <img id= "logo" class = "transition home" src= "img/logo.png">
+      <img id= "hamburger" class = "transition" src="img/burger.png">
+    </header>
+    <!-- Hamburger Menu -->
+    <section id= "hamburger_menu">
+      <div id="close_wrap" class= "transition"><img id= "close" src="img/close.png"></div>
+      <div id= "menu_wrap">
+      <div id="hamburger_menu_links">
+        <a class = "hamburger_link transition home" href="index.html"><h1>Home</h1></a>
+        <a class = "hamburger_link transition about" href="about.html"><h1>About</h1></a>
+      </div>
+      <!-- Project Submenu -->
+      <h1 class="non-link">Projects</h1>
+      <div id="hamburger_submenu">
+        <a class = "hamburger_link delish transition" href="delish.html"><h3>Delish</h3><h4>Web Design, HTML & CSS</h4></a>
+        <a class = "hamburger_link simplet transition" href="simplet.html"><h3>Simplet</h3><h4>App Concept</h4></a>
+        <a class = "hamburger_link audio transition" href="audio.html"><h3>Audio Visualizer</h3><h4>C++ and OpenFrameworks</h4></a>
+        <a class = "hamburger_link compression transition" href="compression.html"><h3>Compression</h3><h4>SMIL</h4></a>
+        <a class = "hamburger_link survival transition" href="survival.html"><h3>Survival of the Fittest</h3><h4>Illustration</h4></a>
+      </div>
+      </div>
+    </section>
+    <!-- Sections of Page -->
+    <!--back of image-->
+    <div id= "main-back" class="delish_page"></div>
+    <section id= "display">
+      <!-- main display-->
+      <div id = "main_display" class ="delish_display"></div>
+      <div id = "display_text">
+      <!--title-->
+      <h1 id = "title">Delish</h1>
+      <h2 id = "sub_heading">Web Design, HTML & CSS</h2>
+      <!--description-->
+      <p id= "description">
+        The Delish website was created for a fictional bakery called “Delish”. The site
+        mockup has 4 pages coded (home, contact, about, products) as well as its very own logo.<br><br>
+        As part of a Web Development class, this was my first website built from scratch.
+      </p>
+      <a href="delish_website/index.html" class = "link transition">Check out the website ></a>
+      </div>
+    </section>
+    <section class = "image_section design">
+      <div class= "section_text">
+      <h1>The Design</h1>
+      <p>Delish is meant to be a fun, warm and energetic brand. Their
+      personality is reflected in the red colour scheme and unconventional titling. </p>
+      </div>
+      <div class ="image_container">
+        <div class = "image_wrap">
+        <img  class="caption_icon expand" src="img/good_images/delish/delish_1.png">
+        <p>Logo</p>
+        </div>
+        <div class= "image_wrap">
+        <img  class="caption_icon expand" src="img/good_images/delish/delish_2.png">
+          <p>Product Page - Mobile Version</p>
+      </div>
+        <div class = "image_wrap">
+        <img  class="caption_icon expand" src="img/good_images/delish/delish_3.png">
+          <p>Contact Page - Original Mockup Design</p>
+        </div>
+        <div class= "image_wrap">
+        <img class="caption_icon expand" src="img/good_images/delish/delish_4.png">
+          <p>About Page</p>
+        </div>
+      </div>
+    </section>
+    <section class= "image_section process">
+      <div class= "section_text">
+      <h1>The Process</h1>
+      <p>The Delish website was designed for a range of younger to older users. To ease
+      navigation through the site, the pages had to have distinguishable sections and
+      prominent buttons.
+      <br><br>
+      These are the first iterations of the design.
+    </p>
+    </div>
+      <div class ="image_container">
+        <div class = "image_wrap">
+        <img  class="caption_icon expand" src="img/good_images/delish/delish_5.jpg">
+          <p>Rough Sketches</p>
+        </div>
+        <div class= "image_wrap">
+        <img class="caption_icon expand" src="img/good_images/delish/delish_6.png">
+          <p>Desktop Wireframe</p>
+        </div>
+        <div class = "image_wrap">
+        <img  class="caption_icon expand" src="img/good_images/delish/delish_7.png">
+        <p>Mobile Wireframe</p>
+        </div>
+        <div class= "image_wrap">
+        <img  class="caption_icon expand" src="img/good_images/delish/delish_8.png">
+        <p>Tablet Wireframe</p>
+        </div>
+      </div>
+    </section>
+    <section id= "image_expand">
+      <img id="expanded_image" src="">
+      <div id = "close_expand" class="transition"></div>
+    </section>
+    <!--scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/page.js"></script>
+  </body>
+</html>

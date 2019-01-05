@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Angelica Mapeso">
+    <title>Angelica Mapeso: Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:200,400,400i" rel="stylesheet">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+      <!-- Header -->
+      <header>
+        <img id= "logo" class = "transition home" src= "img/logo.png">
+        <img id= "hamburger" class = "transition" src="img/burger.png">
+      </header>
+      <!-- Hamburger Menu -->
+      <section id= "hamburger_menu">
+        <div id="close_wrap" class= "transition"><img id= "close" src="img/close.png"></div>
+        <div id= "menu_wrap">
+        <div id="hamburger_menu_links">
+          <a class = "hamburger_link transition home" href="index.html"><h1>Home</h1></a>
+          <a class = "hamburger_link transition about" href="about.html"><h1>About</h1></a>
+        </div>
+        <!-- Project Submenu -->
+        <h1 class="non-link">Projects</h1>
+        <div id="hamburger_submenu">
+          <a class = "hamburger_link delish transition" href="delish.html"><h3>Delish</h3><h4>Web Design, HTML & CSS</h4></a>
+          <a class = "hamburger_link simplet transition" href="simplet.html"><h3>Simplet</h3><h4>App Concept</h4></a>
+          <a class = "hamburger_link audio transition" href="audio.html"><h3>Audio Visualizer</h3><h4>C++ and OpenFrameworks</h4></a>
+          <a class = "hamburger_link compression transition" href="compression.html"><h3>Compression</h3><h4>SMIL</h4></a>
+          <a class = "hamburger_link survival transition" href="survival.html"><h3>Survival of the Fittest</h3><h4>Illustration</h4></a>
+        </div>
+        </div>
+      </section>
+      <!-- Sections of Page -->
+      <!-- Opening Slideshow -->
+      <section id="home_slideshow">
+        <!--hidden when going into mobile mode-->
+        <section id= "slideshow_overlay">
+        <!--navigational images for slideshow-->
+        <section id= "slideshow_navigation">
+          <section id= "slideshow_arrows">
+            <div id= "left_arrow_wrap">
+            <img id = "left_arrow" class = "transition" src= "img/arrow_left.png">
+          </div>
+            <section id= "slide_text">
+              <div id= "desktop_slide">
+                <div>
+                <h1>Hi,</h1>
+                <h2>my name is</h2>
+                <h1>Angelica</h1>
+                <h1>Mapeso.</h1>
+                <h3>I love coding and design.</h3>
+              </div>
+              </div>
+              <h3 id = "view_button" class = "transition">+ View All</h3>
+            </section>
+            <div id = "right_arrow_wrap">
+            <img id = "right_arrow" class = "transition" src = "img/arrow_right.png">
+            </div>
+          </section>
+          <section id = "slideshow_buttons">
+            <section id= "slideshow_circles">
+              <div id = "mobile_button" class = "slide_button transition"></div>
+              <div id = "delish_button" class = "slide_button transition"></div>
+              <div id = "simplet_button" class = "slide_button transition"></div>
+              <div id = "audio_button" class = "slide_button transition"></div>
+            </section>
+          </section>
+        </section>
+      </section>
+        <ul id="slides">
+          <!--mobile slide-->
+          <!--background image customized in css-->
+          <li id= "mobile_slide" class= "slide">
+              <h1>Hi,</h1>
+              <h2>my name is</h2>
+              <h1>Angelica</h1>
+              <h1>Mapeso.</h1>
+              <h3>I love coding and design.</h3>
+          </li>
+          <!--slideshow slides-->
+          <li id = "delish_slide" class = "slide">
+            <div class = "slide_text_wrap">
+                <div class= "slide_hover"></div>
+                <h3 class = "transition slide_text delish">Delish</h3><h4 class= "delish transition">Web Design, HTML & CSS</h4>
+            </div>
+          </li>
+          <li id = "app_slide" class = "slide">
+            <div class = "slide_text_wrap">
+              <div class= "slide_hover"></div>
+            <h3 class = "transition slide_text simplet">Simplet</h3><h4 class= "simplet transition">App Concept</h4>
+          </div>
+          </li>
+          <li id = "audio_slide" class = "slide">
+            <div id = "audio_anim">
+              <div id = "outter_circle" class="audio_shape"></div>
+              <div id = "inner_circle" class="audio_shape"></div>
+              <div id="spinning_circles">
+                <div id = "blue_circle" class="audio_shape"></div>
+                <div id = "pink_circle" class="audio_shape"></div>
+              </div>
+            </div>
+            <div id = "audio_text" class = "slide_text_wrap">
+              <div class= "slide_hover"></div>
+            <h3 class = "transition slide_text audio">Audio Visualizer</h3><h4 class= "audio transition">C++ and OpenFrameworks</h4>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- Project Showcase -->
+      <section id= "project_icons">
+        <div class = "icon transition delish">
+          <img class ="delish" src= "img/icons/delish_icon.jpg">
+          <a class = "icon_link delish" href="delish.html"><h5>Delish</h5><h6>Web Design, HTML & CSS</h6></a>
+        </div>
+        <div class = "icon transition simplet">
+          <img class ="simplet" src= "img/icons/simplet_icon.jpg">
+          <a class = "icon_link simplet" href="simplet.html"><h5>Simplet</h5><h6>App Concept</h6></a>
+        </div>
+        <div class = "icon transition audio">
+          <img class ="audio" src= "img/icons/audio_icon.jpg">
+          <a class = "icon_link audio" href="audio.html"><h5>Audio Visualizer</h5><h6>C++ and OpenFrameworks</h6></a>
+        </div>
+        <div class = "icon transition compression">
+          <img class ="compression" src= "img/icons/smil_icon.jpg">
+          <a class = "icon_link compression" href="compression.html"><h5>Compression</h5><h6>SMIL</h6></a>
+        </div>
+        <div class = "icon transition survival">
+          <img class ="survival" src= "img/icons/survival_icon.jpg">
+          <a class = "icon_link survival" href="survivlva.html"><h5>Survival of the Fittest</h5><h6>Illustration</h6></a>
+        </div>
+      </section>
+    <!--scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/page.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
+</html>

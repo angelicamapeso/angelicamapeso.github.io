@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Delish - Pastry Shoppe</title>
+    <meta name="description" content="Delish: A new bakery in Ottawa, ready to handle your sweet tooth cravings!">
+    <meta name="keyword" content="delish, bakery, ottawa, pastry">
+    <meta name="author" content="Angelica Mapeso">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <!--MOBILE MENU-->
+    <span class="mobileBack">
+    </span>
+    <section class ="mobileMenu">
+      <img class="closeIcon" src="img/closeIcon.png" alt="Closing Icon">
+      <a class ="logoMobile" href="index.html"><img src="img/deslishLogo.png" alt="Delish Logo"></a>
+      <ul>
+        <li><a href="products.html">Our Products</a>
+          <ul class="subMenu">
+            <li><a href="products.html">Seasonal</a></li>
+            <li><a href="products.html">Bread</a></li>
+            <li><a href="products.html">Desserts</a></li>
+            <li><a href="products.html">Snacks</a></li>
+          </ul>
+        </li>
+        <li><a href="orderonline.html">Order Online</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+  </section>
+  <!--CONTAINER FOR ENTIRE WEBSITE-->
+    <div class="container">
+      <header class="headerOverwrite">
+        <section id="logo-container">
+          <a id="logo" href="index.html"><img src="img/deslishLogo.png" alt="Delish Logo"></a>
+        </section>
+        <section id="no-background">
+          <nav class="main-nav">
+            <!--HAMBURGER MENU AND NORMAL MENU WILL BE HIDDEN/SHOWN BASED ON BREAKPOINT-->
+            <img class="menuIcon" id="menuIcon" src="img/hamburgermenu.png" alt="Hamburger Menu">
+            <ul>
+              <li><a href="products.html">Our Products</a></li>
+              <li><a href="orderonline.html">Order Online</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </section>
+      </header>
+      <div class="main-nonhome">
+        <div class="contactHead">
+          <h2 class="h2nonWhite" id="h2Contact">Let's<br>Talk</h2>
+          <section class="store-nonWhite">
+            <p style="font-family:aileron_bold;">Store Hours</p>
+            <p><span style="font-family:aileron_bold;">Mon - Fri:</span>7AM - 6PM</p>
+            <p><span style="font-family:aileron_bold;">Sat - Sun:</span>9AM - 7PM</p>
+            <p><span style="font-family:aileron_bold;">221 Baker Street,</span>Ottawa ON</p>
+          </section>
+        </div>
+        <!--FORM WRAP-->
+        <div class="formWrap">
+          <form action="delishContact.php" method="post">
+            <div>
+              <label for="Name">Name: </label>
+              <input type="text" name="Name" id="Name" required>
+            </div>
+            <div>
+              <label for="userEmail">Email: </label>
+              <input type="email" name="userEmail" id="userEmail" required>
+            </div>
+            <div>
+              <label for="subject">Subject: </label>
+              <input type="text" name="subject" id="subject">
+            </div>
+            <fieldset>
+              <legend>Which topic area does your message concern?</legend>
+              <div class="fieldsetLabels">
+              <label for="online">Online Order
+                <input type="checkbox" name="topicArea" id="online">
+                <span class="check"></span>
+              </label>
+              <label for="specialEvent">Special Event
+                <input type="checkbox" name="topicArea" id="specialEvent">
+                <span class="check"></span>
+              </label>
+              <label for="product">In-Store Product
+                <input type="checkbox" name="topicArea" id="product">
+                <span class="check"></span>
+              </label>
+              <label for="other">Other
+                <input type="checkbox" name="topicArea" id="other">
+                <span class="check"></span>
+              </label>
+            </div>
+            </fieldset>
+            <div>
+              <label for="message">Message: </label>
+              <textarea name="message" id="message" required></textarea>
+            </div>
+            <div>
+            <label for="subscribe" class="subscription" id="subscribeCheck">Subscribe me to the Delish' Newsletter for easy recipes!
+              <input type="radio" name="sub" id="subscribe">
+              <span class="radiobox"></span>
+            </label>
+            <label for="unsubscribe" class="subscription" id="unsubscribeCheck">I do not wish to receive the Delish' Newsletter.
+              <input type="radio" name="sub" id="unsubscribe" checked>
+              <span class="radiobox"></span>
+            </label>
+          </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+      <footer>
+          <nav class="footer-nav">
+            <!--FOOTER MENU-->
+            <ul>
+              <li><a href="products.html">Our Products</a></li>
+              <li><a href="orderonline.html">Order Online</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <!--FOOTER INFORMATION-->
+          <section class="store-info">
+            <p style="font-family:aileron_bold;">Store Hours</p>
+            <p><span style="font-family:aileron_bold;">Mon - Fri:</span>7AM - 6PM</p>
+            <p><span style="font-family:aileron_bold;">Sat - Sun:</span>9AM - 7PM</p>
+            <p><span style="font-family:aileron_bold;">221 Baker Street,</span>Ottawa ON</p>
+          </section>
+      </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/contact.js"></script>
+  </body>
+</html>

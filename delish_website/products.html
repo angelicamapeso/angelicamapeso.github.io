@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Delish - Pastry Shoppe</title>
+    <meta name="description" content="Delish: A new bakery in Ottawa, ready to handle your sweet tooth cravings!">
+    <meta name="keyword" content="delish, bakery, ottawa, pastry">
+    <meta name="author" content="Angelica Mapeso">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <!--MOBILE MENU-->
+    <span class="mobileBack">
+    </span>
+    <section class ="mobileMenu">
+      <img class="closeIcon" src="img/closeIcon.png" alt="Closing Icon">
+      <a class ="logoMobile" href="index.html"><img src="img/deslishLogo.png" alt="Delish Logo"></a>
+      <ul>
+        <li><a href="products.html">Our Products</a>
+          <ul class="subMenu">
+            <li><a href="products.html">Seasonal</a></li>
+            <li><a href="products.html">Bread</a></li>
+            <li><a href="products.html">Desserts</a></li>
+            <li><a href="products.html">Snacks</a></li>
+          </ul>
+        </li>
+        <li><a href="orderonline.html">Order Online</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+  </section>
+  <!--CONTAINER FOR ENTIRE WEBSITE-->
+    <div class="container">
+      <header class="headerOverwrite">
+        <section id="logo-container">
+          <a id="logo" href="index.html"><img src="img/deslishLogo.png" alt="Delish Logo"></a>
+        </section>
+        <section id="no-background">
+          <nav class="main-nav">
+            <!--HAMBURGER MENU AND NORMAL MENU WILL BE HIDDEN/SHOWN BASED ON BREAKPOINT-->
+            <img class="menuIcon" id="menuIcon" src="img/hamburgermenu.png" alt="Hamburger Menu">
+            <ul>
+              <li><a href="products.html">Our Products</a></li>
+              <li><a href="orderonline.html">Order Online</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </section>
+      </header>
+      <div id="product-body">
+        <!--PRODUCT SECTION
+          Made up of product boxes, and header
+        -->
+        <h2 id="ourProducts" class="h2nonWhite">Our <br> Products</h2>
+        <div id="products">
+          <div class="productBox" id="seasonalBox">
+            <section class="imgProduct" id="seasonalProduct">
+            <section class="productOverlay cake"></section>
+            </section>
+            <div>
+              <p class="pNonWhite pbold">Seasonal</p>
+              <p class="pNonWhite lastText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in vestibulum neque, vel dapibus metus. Aliquam erat volutpat. Quisque ultrices libero enim, sit amet varius nibh rutrum ac.</p>
+              <a class="linkNonWhite" href="seasonal.html">View More ></a>
+            </div>
+          </div>
+          <div class="productBox" id="breadBox">
+            <section class="imgProduct" id="breadProduct">
+              <section class="productOverlay bread"></section>
+            </section>
+            <div>
+              <p class="pNonWhite pbold">Bread</p>
+              <p class="pNonWhite lastText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in vestibulum neque, vel dapibus metus. Aliquam erat volutpat. Quisque ultrices libero enim, sit amet varius nibh rutrum ac.</p>
+              <a class="linkNonWhite" href="seasonal.html">View More ></a>
+            </div>
+          </div>
+          <div class="productBox" id="dessertBox">
+            <section class="imgProduct" id="dessertsProduct">
+              <section class="productOverlay brownie"></section>
+            </section>
+            <div>
+              <p class="pNonWhite pbold">Desserts</p>
+              <p class="pNonWhite lastText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in vestibulum neque, vel dapibus metus. Aliquam erat volutpat. Quisque ultrices libero enim, sit amet varius nibh rutrum ac.</p>
+              <a class="linkNonWhite" href="seasonal.html">View More ></a>
+            </div>
+          </div>
+          <div class="productBox" id="snackBox">
+            <section class="imgProduct" id="snacksProduct">
+              <section class="productOverlay chocolates"></section>
+            </section>
+            <div>
+              <p class="pNonWhite pbold">Snacks</p>
+              <p class="pNonWhite lastText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in vestibulum neque, vel dapibus metus. Aliquam erat volutpat. Quisque ultrices libero enim, sit amet varius nibh rutrum ac.</p>
+              <a class="linkNonWhite" href="seasonal.html">View More ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+          <nav class="footer-nav">
+            <!--FOOTER MENU-->
+            <ul>
+              <li><a href="products.html">Our Products</a></li>
+              <li><a href="orderonline.html">Order Online</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <!--FOOTER INFORMATION-->
+          <section class="store-info">
+            <p style="font-family:aileron_bold;">Store Hours</p>
+            <p><span style="font-family:aileron_bold;">Mon - Fri:</span>7AM - 6PM</p>
+            <p><span style="font-family:aileron_bold;">Sat - Sun:</span>9AM - 7PM</p>
+            <p><span style="font-family:aileron_bold;">221 Baker Street,</span>Ottawa ON</p>
+          </section>
+      </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/products.js"></script>
+    <script type="text/javascript" src="js/credit.js"></script>
+  </body>
+</html>

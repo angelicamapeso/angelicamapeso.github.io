@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Angelica Mapeso">
+    <title>Angelica Mapeso: Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:200,400,400i" rel="stylesheet">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/child_page.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <img id= "logo" class = "transition home" src= "img/logo.png">
+      <img id= "hamburger" class = "transition" src="img/burger.png">
+    </header>
+    <!-- Hamburger Menu -->
+    <section id= "hamburger_menu">
+      <div id="close_wrap" class= "transition"><img id= "close" src="img/close.png"></div>
+      <div id= "menu_wrap">
+      <div id="hamburger_menu_links">
+        <a class = "hamburger_link transition home" href="index.html"><h1>Home</h1></a>
+        <a class = "hamburger_link transition about" href="about.html"><h1>About</h1></a>
+      </div>
+      <!-- Project Submenu -->
+      <h1 class="non-link">Projects</h1>
+      <div id="hamburger_submenu">
+        <a class = "hamburger_link delish transition" href="delish.html"><h3>Delish</h3><h4>Web Design, HTML & CSS</h4></a>
+        <a class = "hamburger_link simplet transition" href="simplet.html"><h3>Simplet</h3><h4>App Concept</h4></a>
+        <a class = "hamburger_link audio transition" href="audio.html"><h3>Audio Visualizer</h3><h4>C++ and OpenFrameworks</h4></a>
+        <a class = "hamburger_link compression transition" href="compression.html"><h3>Compression</h3><h4>SMIL</h4></a>
+        <a class = "hamburger_link survival transition" href="survival.html"><h3>Survival of the Fittest</h3><h4>Illustration</h4></a>
+      </div>
+      </div>
+    </section>
+    <!-- Sections of Page -->
+    <!--back of image-->
+    <div id= "main-back" class="audio_page"></div>
+    <section id= "display">
+      <!-- main display-->
+      <div id = "main_display" class ="audio_display">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/trr4GsEHfD0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div id = "display_text">
+      <!--title-->
+      <h1 id = "title">Audio Visualizer</h1>
+      <h2 id = "sub_heading">C++ and OpenFrameworks</h2>
+      <!--description-->
+      <p id= "description">
+        The Audio Visualizer was created for upbeat music,
+        taking advantage of heavy bass and separate tones to create an exciting atmosphere.
+        The program uses an <a href="https://github.com/kylemcdonald/ofxFft" class = "link transition">
+          Audio Analysis Library</a>
+        and OpenFrameworks.
+        <br><br>Originally programmed to Blackpink’s “Ddu-du-ddu-du” for a Sensor-Based Interaction
+        class, the
+        full experience features a changing background from black to pink every time the
+        group’s name is shouted out.
+      </p>
+      </div>
+    </section>
+    <section class = "image_section design">
+      <div class= "section_text">
+      <h1>The Design</h1>
+      <p>
+        For the animation to gradually get more intense, the design
+        cycles through different compositions of circles, starting with a
+        singular circle to a rotating display of four. Further movement of these elements on
+        screen is dictated by the bass.
+        <br><br>
+        The circles are typically linked to higher frequencies while the squares are
+        typically linked to the drums or the bass.
+      </p>
+      </div>
+      <div class ="image_container">
+        <div class = "image_wrap">
+        <img  class="caption_icon expand" src="img/good_images/audio/audio_1.png">
+        <p>Single Circle</p>
+        </div>
+        <div class= "image_wrap">
+        <img  class="caption_icon expand" src="img/good_images/audio/audio_2.png">
+          <p>Double Circle</p>
+      </div>
+        <div class = "image_wrap">
+        <img  class="caption_icon expand" src="img/good_images/audio/audio_3.png">
+          <p>Triple Circle</p>
+        </div>
+        <div class = "image_wrap">
+        <img  class="caption_icon expand" src="img/good_images/audio/audio_4.png">
+          <p>Quadruple Circle</p>
+        </div>
+      </div>
+    </section>
+    <section class= "image_section process">
+      <div class= "section_text">
+      <h1>The Process</h1>
+      <p>
+        Originally, the design of the Audio Visualizer was going
+        to be separate animations for each verse. However, this got very
+         time-consuming as each part would have to look different and increase in energy.
+         <br><br>
+        The new animations take an automated approach, consisting of
+         customizable animation functions that can be combined to make up each verse.
+         To colour and resize the animations, a “Tone” class was made to store
+         frequencies and their assigned colours. These were then used as inputs
+         for each animation function.
+    </p>
+    </div>
+      <div class ="image_container">
+        <div class = "image_wrap">
+        <img  class="caption_icon expand" src="img/good_images/audio/audio_5.png">
+          <p>Debug Screen</p>
+        </div>
+        <div class= "image_wrap">
+        <img class="caption_icon expand" src="img/good_images/audio/audio_6.jpg">
+          <p>Rough Sketch</p>
+        </div>
+      </div>
+    </section>
+    <section id= "image_expand">
+      <img id="expanded_image" src="">
+      <div id = "close_expand" class="transition"></div>
+    </section>
+    <!--scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/page.js"></script>
+  </body>
+</html>
