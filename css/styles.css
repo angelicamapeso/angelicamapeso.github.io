@@ -261,7 +261,7 @@ header {
 /**********************************************************
                             	Breakpoints
 ***********************************************************/
-@media screen and (min-width:601px){
+@media screen and (min-width:768px){
 	.delish_page{
 		background:url(../img/main_back/delish/header_desktop.jpg);
 		background-position:left bottom;

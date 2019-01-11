@@ -12,7 +12,7 @@ jQuery(document).ready(function($){
   var mobile_slide;
   var mobile_button;
   function windowCheck() {
-      if (sizes.windowWidth > 600) {
+      if (sizes.windowWidth > 768) {
         if (mobile_slide == null && mobile_button == null){
           var currentId = $(".slide:nth-child(2)").attr("id");
           mobile_slide = $("#mobile_slide").detach();
@@ -113,7 +113,7 @@ jQuery(document).ready(function($){
 
   /**startup run **/
   sizes.windowWidth = window.innerWidth;
-  if (sizes.windowWidth > 600) {
+  if (sizes.windowWidth > 768) {
     if (mobile_slide == null && mobile_button == null) {
       mobile_slide = $("#mobile_slide").detach();
       mobile_button= $("#mobile_button").detach();

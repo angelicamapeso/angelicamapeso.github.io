@@ -266,7 +266,7 @@
 /**********************************************************
                             	Breakpoints
 ***********************************************************/
-@media screen and (min-width:601px){
+@media screen and (min-width:768px){
   #close_expand{
     right:20px;
     width:50px;
