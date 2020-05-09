@@ -88,6 +88,9 @@ h5{
 h6,{
 	font-size:100%;
 }
+a {
+	text-decoration: none;
+}
 /*.simplet_lis*/ ul{
   list-style-type:disc;
 }

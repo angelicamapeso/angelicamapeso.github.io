@@ -23,6 +23,9 @@
 #display, .image_section{
     padding:20px;
 }
+#display a, .image_section a {
+  text-decoration: underline;
+}
 #main-back{
   height:50%;
   background-size:cover;
