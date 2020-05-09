@@ -88,8 +88,18 @@ h5{
 h6,{
 	font-size:100%;
 }
-a{
-  text-decoration:none;
+/*.simplet_lis*/ ul{
+  list-style-type:disc;
+}
+/*.simplet_list*/ul li{
+  list-style-position:outside;
+  padding-left:10px;
+  width:90%;
+
+  float: right;
+}
+/*.simplet_list*/ ul li p{
+  font-weight:200;
 }
 .link{
 	color:rgb(178,34,81);
@@ -257,6 +267,9 @@ header {
 }
 .survival_page{
 	background:rgb(30,30,30);
+}
+.canadabuys_page{
+	background:rgb(38,55,74);
 }
 /**********************************************************
                             	Breakpoints

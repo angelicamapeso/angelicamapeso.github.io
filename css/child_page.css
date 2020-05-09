@@ -66,22 +66,13 @@
 .simplet_description{
   margin-bottom:20px;
 }
-.simplet_list{
-  list-style-type:disc;
-}
-.simplet_list li{
-  list-style-position:outside;
-  padding-left:10px;
-  width:90%;
-
-  float: right;
-}
-.simplet_list li p{
-  font-weight:200;
-}
 /****survival****/
 .survival_display{
   background-image:url(../img/main/survival/survival_mobile.png);
+}
+/****canadabuys****/
+.canadabuys_display {
+  background-image:url(../img/main/canadabuys/main_tablet.png);
 }
 /****************************
         About
@@ -212,7 +203,7 @@
 
 }
 .design{
-    background:rgba(28,28,28, 0.3);
+    background:rgba(28,28,28, 0.05);
 }
 .image_container{
   box-sizing:border-box;
@@ -253,12 +244,12 @@
 }
 .section_text {
   margin-bottom:50px;
-  padding-right:10px;
+  padding-right:20px;
 }
 .section_text > h1{
   margin-bottom:20px;
 }
-.section_text > p{
+.section_text  p{
   font-size:120%;
   font-weight:200;
 }
@@ -378,5 +369,8 @@
   }
   .survival_display{
     background-image:url(../img/main/survival/survival_desktop.png);
+  }
+  .canadabuys_display{
+    background-image:url(../img/main/canadabuys/main_desktop.png);
   }
 }
