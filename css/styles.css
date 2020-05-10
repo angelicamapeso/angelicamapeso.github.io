@@ -168,10 +168,13 @@ header {
   justify-content:space-between;
 }
 #logo{
-  height:100%;
+  height:80%;
+	-webkit-align-self: center;
+	-ms-flex-item-align: center;
+	align-self:center;
 }
 #hamburger{
-  height:70%;
+  height:60%;
     -webkit-align-self: center;
     -ms-flex-item-align: center;
     align-self:center;
