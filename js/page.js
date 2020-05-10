@@ -3,11 +3,33 @@ jQuery(document).ready(function($){
               HAMBURGER MENU
   ***********************************/
   $("#hamburger").on("click", function(){
+    event.preventDefault();
+    $("#hamburger_menu").scrollTop = 0;
     $("#hamburger_menu").show("fade");
+
+    overlay_open($("#hamburger_menu"));
   });
-  $("#close_wrap").on("click", function(){
+  $("#close").on("click", function(){
+    event.preventDefault();
     $("#hamburger_menu").hide("fade");
+
+    overlay_close($("#hamburger_menu"));
   });
+  /**********************************
+              OVERLAY
+  ***********************************/
+  //use function for when something is clicked
+  function overlay_open(element) {
+    element.scrollTop(0);
+    document.body.classList.add('noscroll');
+
+  }
+  function overlay_close(element) {
+    element.css('overflow', 'hidden');
+    document.body.classList.remove('noscroll');
+  }
+  //put a noscroll class on the body to prevent it from scrolling
+  //keep the overlay normal
   /**********************************
               LINKS
   ***********************************/

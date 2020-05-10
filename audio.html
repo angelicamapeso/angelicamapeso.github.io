@@ -12,30 +12,31 @@
   <body>
     <!-- Header -->
     <header>
-      <img id= "logo" class = "transition home" src= "img/logov2.png">
-      <img id= "hamburger" class = "transition" src="img/burger.png">
+      <!--id= "logo" class = "transition home"-->
+      <a id= "logo" class = "transition" href="index.html"><img src= "img/logov2.png" alt="Go to the Homepage"></a>
+      <a id="hamburger" class= "transition" href="#" ><img src="img/burger.png" alt="Open the Menu"></a>
     </header>
     <!-- Hamburger Menu -->
-    <section id= "hamburger_menu">
-      <div id="close_wrap" class= "transition"><img id= "close" src="img/close.png"></div>
-      <div id= "menu_wrap">
-      <div id="hamburger_menu_links">
-        <a class = "hamburger_link transition home" href="index.html"><h1>Home</h1></a>
-        <a class = "hamburger_link transition about" href="about.html"><h1>About</h1></a>
-      </div>
-      <!-- Project Submenu -->
-      <h1 class="non-link">Projects</h1>
-      <div id="hamburger_submenu">
-        <a class = "hamburger_link delish transition" href="delish.html"><h3>Delish</h3><h4>Web Design, HTML & CSS</h4></a>
-        <a class = "hamburger_link canadabuys transition" href="canadabuys.html"><h3>CanadaBuys</h3><h4>Visual Design</h4></a>
-        <a class = "hamburger_link naturelive transition" href="naturelive.html"><h3>Nature Live</h3><h4>Interactive Space Design</h4></a>
-        <a class = "hamburger_link simplet transition" href="simplet.html"><h3>Simplet</h3><h4>App Concept</h4></a>
-        <a class = "hamburger_link audio transition" href="audio.html"><h3>Audio Visualizer</h3><h4>C++ and OpenFrameworks</h4></a>
-        <!--<a class = "hamburger_link compression transition" href="compression.html"><h3>Compression</h3><h4>SMIL</h4></a>-->
-        <a class = "hamburger_link survival transition" href="survival.html"><h3>Survival of the Fittest</h3><h4>Illustration</h4></a>
-      </div>
-      </div>
-    </section>
+    <aside id= "hamburger_menu">
+      <a id="close" class= "transition" href="#"><img src="img/close.png" alt="Close the Menu"></a>
+      <nav id= "menu_wrap">
+        <div id="hamburger_menu_links">
+          <a class = "hamburger_link transition home" href="index.html"><h1>Home</h1></a>
+          <a class = "hamburger_link transition about" href="about.html"><h1>About</h1></a>
+        </div>
+        <!-- Project Submenu -->
+        <h1 class="non-link">Projects</h1>
+        <div id="hamburger_submenu">
+          <a class = "hamburger_link delish transition" href="delish.html"><h2>Delish</h2><p>Web Design, HTML & CSS</p></a>
+          <a class = "hamburger_link canadabuys transition" href="canadabuys.html"><h2>CanadaBuys</h2><p>Visual Design</p></a>
+          <a class = "hamburger_link naturelive transition" href="naturelive.html"><h2>Nature Live</h2><p>Interactive Space Design</p></a>
+          <a class = "hamburger_link simplet transition" href="simplet.html"><h2>Simplet</h2><p>App Concept</p></a>
+          <a class = "hamburger_link audio transition" href="audio.html"><h2>Audio Visualizer</h2><p>C++ and OpenFrameworks</p></a>
+          <!--<a class = "hamburger_link compression transition" href="compression.html"><h3>Compression</h3><h4>SMIL</h4></a>-->
+          <a class = "hamburger_link survival transition" href="survival.html"><h2>Survival of the Fittest</h2><p>Illustration</p></a>
+        </div>
+      </nav>
+    </aside>
     <!-- Sections of Page -->
     <!--back of image-->
     <div id= "main-back" class="audio_page"></div>
