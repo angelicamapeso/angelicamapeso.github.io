@@ -613,9 +613,9 @@
 		margin:5px;
 	}
 	#project_icons{
-		-webkit-justify-content: space-between;
-		-ms-flex-pack: space-between;
-	  justify-content:space-between;
+		-webkit-justify-content: space-evenly;
+		-ms-flex-pack: space-evenly;
+	  justify-content:space-evenly;
 	}
 
 
