@@ -91,17 +91,17 @@ h6,{
 a {
 	text-decoration: none;
 }
-/*.simplet_lis*/ ul{
+#display_text ul, .image_section ul{
   list-style-type:disc;
 }
-/*.simplet_list*/ul li{
+#display_text ul li, .image_section ul li{
   list-style-position:outside;
   padding-left:10px;
   width:90%;
 
   float: right;
 }
-/*.simplet_list*/ ul li p{
+#display_text ul li p, .image_section ul li p{
   font-weight:200;
 }
 .link{
@@ -323,7 +323,7 @@ header {
 		}
 		.compression_page{
 			background:url(../img/main_back/compression/header_large_desktop.jpg);
-			 background-position:left bottom ;
+			 background-position:left bottom;
 		}
 		.naturelive_page{
 			background:url(../img/main_back/naturelive/header_large_desktop.jpg);
