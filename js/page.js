@@ -32,6 +32,12 @@ jQuery(document).ready(function($){
   $(".survival").click(function(){
     window.location = "survival.html";
   });
+  $(".canadabuys").click(function(){
+    window.location = "canadabuys.html";
+  });
+  $(".naturelive").click(function(){
+    window.location = "naturelive.html";
+  });
   /**********************************
               Image Expand
   ***********************************/
