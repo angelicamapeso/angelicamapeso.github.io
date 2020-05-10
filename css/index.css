@@ -368,8 +368,8 @@
 	background-size: cover;
   background-position:top;
 }
-#app_slide{
-	background: url(../img/slideshow/simplet_mobile.jpg);
+#canadabuys_slide{
+	background: url(../img/slideshow/canadabuys_mobile.jpg);
 	background-size:cover;
   background-position:center;
 }
@@ -393,10 +393,12 @@
 	background-color:rgba(0,0,0,0.55);
 }
 /**audio_visualizer**/
-#audio_slide{
-	background:rgb(28,28,28);
+#naturelive_slide{
+  background: url(../img/slideshow/naturelive_mobile.png);
+	background-size:cover;
+  background-position:center;
 }
-#audio_anim{
+/*#audio_anim{
 	box-sizing:border-box;
 	width:50vw;
 	height:50vw;
@@ -422,10 +424,10 @@
 	left:12.5vw;
 	top:12.5vw;
 
-	-webkit-animation: resize 5s infinite; /* Safari 4+ */
-		-moz-animation:  resize 5s infinite; /* Fx 5+ */
-		-o-animation:    resize 5s infinite; /* Opera 12+ */
-		animation:       resize 5s infinite; /* IE 10+, Fx 29+ */
+	-webkit-animation: resize 5s infinite;
+		-moz-animation:  resize 5s infinite;
+		-o-animation:    resize 5s infinite;
+		animation:       resize 5s infinite;
 }
 #spinning_circles{
 	width:62.5vw;
@@ -439,10 +441,10 @@
 	-ms-flex-pack: justify;
 	justify-content:space-between;
 
-	-webkit-animation: rotate 60s linear infinite; /* Safari 4+ */
-	  -moz-animation:  rotate 60s linear infinite; /* Fx 5+ */
-	  -o-animation:    rotate 60s linear infinite; /* Opera 12+ */
-	  animation:       rotate 60s linear infinite; /* IE 10+, Fx 29+ */
+	-webkit-animation: rotate 60s linear infinite;
+	  -moz-animation:  rotate 60s linear infinite;
+	  -o-animation:    rotate 60s linear infinite;
+	  animation:       rotate 60s linear infinite;
 }
 #blue_circle, #pink_circle{
 	position:relative;
@@ -453,18 +455,18 @@
 #blue_circle{
 	background:rgb(1,122,138);
 
-	-webkit-animation: resize 1s infinite; /* Safari 4+ */
-		-moz-animation:  resize 1s infinite; /* Fx 5+ */
-		-o-animation:    resize 1s infinite; /* Opera 12+ */
-		animation:       resize 1s infinite; /* IE 10+, Fx 29+ */
+	-webkit-animation: resize 1s infinite;
+		-moz-animation:  resize 1s infinite;
+		-o-animation:    resize 1s infinite;
+		animation:       resize 1s infinite;
 }
 #pink_circle{
 	background:rgb(178,82,109);
 
-	-webkit-animation: resize 2s 0.25s infinite; /* Safari 4+ */
-		-moz-animation:  resize 2s 0.25s infinite; /* Fx 5+ */
-		-o-animation:    resize 2s 0.25s infinite; /* Opera 12+ */
-		animation:       resize 2s 0.25s infinite; /* IE 10+, Fx 29+ */
+	-webkit-animation: resize 2s 0.25s infinite;
+		-moz-animation:  resize 2s 0.25s infinite;
+		-o-animation:    resize 2s 0.25s infinite;
+		animation:       resize 2s 0.25s infinite;
 }
 #audio_text{
 	position:absolute;
@@ -477,7 +479,7 @@
 	width:100vw;
 	height:120%;
 	bottom:-30%;
-}
+}*/
 
 /**********************************************************
 												Second Section
@@ -533,11 +535,16 @@
     background-position:top;
 
 	}
-	#app_slide{
-			background:url(../img/slideshow/simplet_tablet.jpg);
+	#canadabuys_slide{
+			background:url(../img/slideshow/canadabuys_tablet.jpg);
 			background-size:cover;
-      background-position:center;
+      background-position:50% 35%;
 	}
+  #naturelive_slide{
+    background: url(../img/slideshow/naturelive_tablet.png);
+  	background-size:cover;
+    background-position:center;
+  }
 	/**re-arrange**/
 	#slide_text{
 		-ms-flex-pack:start;
@@ -582,7 +589,7 @@
 
 		position:relative;
 	}
-	#audio_anim{
+	/*#audio_anim{
 		top:-15vw;
 		left:-5vw;
 	}
@@ -594,7 +601,7 @@
 	}
 	#audio_text >div{
 		height:130%;
-	}
+	}*/
 }
 @media screen and (min-width:900px){
 	/**change backgrounds**/
@@ -603,11 +610,16 @@
 		background-size:cover;
     background-position:top;
 	}
-	#app_slide{
-			background:url(../img/slideshow/simplet_desktop.jpg);
+	#canadabuys_slide{
+			background:url(../img/slideshow/canadabuys_desktop.jpg);
 			background-size:cover;
-      background-position:center;
+      background-position:50% 35%;
 	}
+  #naturelive_slide{
+    background: url(../img/slideshow/naturelive_desktop.png);
+  	background-size:cover;
+    background-position:50% 35%;
+  }
 	.icon{
 		width:15vw;
 		margin:5px;
@@ -627,11 +639,16 @@
 		background-size:cover;
     background-position:top;
 	}
-	#app_slide{
-			background:url(../img/slideshow/simplet_large_desktop.jpg);
+	#canadabuys_slide{
+			background:url(../img/slideshow/canadabuys_large_desktop.jpg);
 			background-size:cover;
-      background-position:center;
+      background-position: 50% 35%;
 	}
+  #naturelive_slide{
+    background: url(../img/slideshow/naturelive_large_desktop.png);
+  	background-size:cover;
+    background-position:50% 35%;
+  }
 	.icon{
 		width:18vw;
 	}

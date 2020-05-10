@@ -26,10 +26,10 @@ jQuery(document).ready(function($){
       else {
         if (mobile_slide != null && mobile_button != null){
           var currentId = $(".slide:nth-child(2)").attr("id");
-          if (currentId == "audio_slide"){
+          if (currentId == "naturelive_slide"){
             mobile_slide.insertBefore("#delish_slide");
           }
-          else if (currentId == "app_slide"){
+          else if (currentId == "canadabuys_slide"){
             mobile_slide.appendTo("#slides");
           }
           else if (currentId == "delish_slide"){
@@ -72,13 +72,13 @@ jQuery(document).ready(function($){
     else {
       $("#delish_button").css("background-color","rgba(255,255,255,0.3)");
     }
-    if (currentId == "app_slide"){
+    if (currentId == "canadabuys_slide"){
       $("#simplet_button").css("background-color","rgba(255,255,255,1)");
     }
     else {
       $("#simplet_button").css("background-color","rgba(255,255,255,0.3)");
     }
-    if (currentId== "audio_slide"){
+    if (currentId== "naturelive_slide"){
       $("#audio_button").css("background-color","rgba(255,255,255,1)");
     }
     else {
