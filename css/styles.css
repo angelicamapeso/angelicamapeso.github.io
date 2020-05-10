@@ -264,10 +264,10 @@ header {
 	background:url(../img/main_back/simplet/header_tablet.jpg);
 	 background-position:center;
 }
-.compression_page{
+/*.compression_page{
 	background:url(../img/main_back/compression/header_tablet.jpg);
 	 background-position:bottom;
-}
+}*/
 .survival_page{
 	background:rgb(30,30,30);
 }
@@ -294,10 +294,10 @@ header {
 		background:url(../img/main_back/simplet/header_desktop.jpg);
 		 background-position:center;
 	}
-	.compression_page{
+	/*.compression_page{
 		background:url(../img/main_back/compression/header_desktop.jpg);
 		 background-position:left bottom;
-	}
+	}*/
 	.naturelive_page{
 		background:url(../img/main_back/naturelive/header_desktop.jpg);
 		 background-position:bottom;
@@ -321,10 +321,10 @@ header {
 			background:url(../img/main_back/simplet/header_large_desktop.jpg);
 			 background-position:center;
 		}
-		.compression_page{
+		/*.compression_page{
 			background:url(../img/main_back/compression/header_large_desktop.jpg);
 			 background-position:left bottom;
-		}
+		}*/
 		.naturelive_page{
 			background:url(../img/main_back/naturelive/header_large_desktop.jpg);
 			 background-position:bottom;

@@ -26,9 +26,9 @@ jQuery(document).ready(function($){
   $(".audio").click(function(){
     window.location = "audio.html";
   });
-  $(".compression").click(function(){
+  /*$(".compression").click(function(){
     window.location = "compression.html";
-  });
+  });*/
   $(".survival").click(function(){
     window.location = "survival.html";
   });
