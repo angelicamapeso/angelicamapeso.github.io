@@ -49,8 +49,11 @@
   background-position:center;
   background-repeat:no-repeat;
 }
-#title, #sub_heading{
-  text-align:left;
+#display_text .title{
+  font-size: 125%;
+}
+#display_text .subtitle {
+  font-size: 100%;
 }
 /****************************
       Page-Specific
