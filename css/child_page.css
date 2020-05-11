@@ -63,9 +63,6 @@
 .simplet_display{
   background-image:url(../img/main/simplet/phone_mobile.png);
 }
-.simplet_description{
-  margin-bottom:20px;
-}
 /****survival****/
 .survival_display{
   background-image:url(../img/main/survival/survival_mobile.png);
@@ -164,16 +161,10 @@
   box-sizing:border-box;
   width:100%;
 }
-/*#display_text a, .about_display_text a {
-  margin-top:20px;
-  text-decoration:underline;
-
-}*/
 .about_display_text{
   width:100%;
   padding-left:20px;
 }
-
 /****************************
     Image Section
 *****************************/
@@ -238,7 +229,6 @@
   font-size:120%;
   font-weight:200;
 }
-
 /**********************************************************
                             	Breakpoints
 ***********************************************************/
