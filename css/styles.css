@@ -92,6 +92,7 @@ a {
 	text-decoration: none;
 }
 #display_text ul, .image_section ul{
+	margin-top:20px;
   list-style-type:disc;
 }
 #display_text ul li, .image_section ul li{
@@ -101,8 +102,11 @@ a {
 
   float: right;
 }
-#display_text ul li p, .image_section ul li p{
-  font-weight:200;
+#display_text ul li p {
+	font-weight: 400;
+}
+.image_section ul li p{
+  font-weight:300;
 }
 .link{
 	color:rgb(178,34,81);
