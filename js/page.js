@@ -21,6 +21,7 @@ jQuery(document).ready(function($){
 
   }
   function overlay_close(element) {
+    element.scrollTop(0);
     element.css('overflow', 'hidden');
     element.fadeOut(200, bodyScroll_check);
   }
@@ -47,8 +48,8 @@ jQuery(document).ready(function($){
       document.body.classList.remove('noscroll');
     }
 
-    console.log("Hamburger menu visible: " + hamburgerMenuIsVisible);
-    console.log("Image Expand visible: " + imageExpandIsVisible);
+    /*console.log("Hamburger menu visible: " + hamburgerMenuIsVisible);
+    console.log("Image Expand visible: " + imageExpandIsVisible);*/
 
   }
   //if any of these elements are visible, then make sure no scroll is applied (if (it hasn't been applied already)
@@ -103,7 +104,10 @@ jQuery(document).ready(function($){
   //pass the image to the src
   $(".expand").click(function() {
     var bg = this.src;
+    var maxWidth = this.naturalWidth;
+
     $("#expanded_image").attr('src', bg);
+    $("#expanded_image").css('max-width', maxWidth);
 
     overlay_open($("#image_expand"));
   });
@@ -111,6 +115,7 @@ jQuery(document).ready(function($){
 
     overlay_close($("#image_expand"));
     $("#expanded_image").css('background-image','');
+    $("#expanded_image").css('max-width', '');
   });
 
 

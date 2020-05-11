@@ -2,10 +2,10 @@
 /****************************
             Flexbox
 *****************************/
-#display, .image_expand, #display_text,
+#display, #display_text,
 .image_wrap, .image_section, .section_text,
 .about_page, .about_display_text,
-.about_display_container
+.about_display_container, #image_expand
 {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -125,7 +125,7 @@
   background:rgb(0,0,0,0.8);
   width:100%;
   height:100%;
-  padding:100px 50px 50px 10px;
+  padding:100px 50px 100px 50px;
   top:0;
   left:0;
   display:none;
@@ -135,10 +135,10 @@
 }
 #expanded_image{
   margin: auto;
-
-  background-size:cover;
-  background-repeat:no-repeat;
+  position: relative;
+  top: 100px;
   width:80%;
+  margin-bottom: 100px;
 }
 #close_expand{
   position:fixed;
@@ -146,9 +146,11 @@
   background-size:contain;
   background-repeat:no-repeat;
   background-position: right;
-  margin: 0 auto;
-  width:72px;
-  height:72px;
+  width:60px;
+
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self:center;
 }
 #close_expand:hover{
   opacity:0.6;
@@ -218,7 +220,7 @@
   flex-wrap: wrap ;
 
 }
-.image_wrap > p {
+.image_wrap > figcaption {
   margin-top:20px;
   color:rgb(0,0,0,0.6);
   text-align:center;
@@ -254,6 +256,11 @@
                             	Breakpoints
 ***********************************************************/
 @media screen and (min-width:768px){
+  #close_expand {
+    -webkit-align-self: flex-end;
+    -ms-flex-item-align:flex-end;
+    align-self:flex-end;
+  }
   #main_display{
     padding-left:50px;
     padding-right:50px;
