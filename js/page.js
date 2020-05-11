@@ -4,15 +4,10 @@ jQuery(document).ready(function($){
   ***********************************/
   $("#hamburger").on("click", function(){
     event.preventDefault();
-    $("#hamburger_menu").scrollTop = 0;
-    $("#hamburger_menu").show("fade");
-
     overlay_open($("#hamburger_menu"));
   });
   $("#close").on("click", function(){
     event.preventDefault();
-    $("#hamburger_menu").hide("fade");
-
     overlay_close($("#hamburger_menu"));
   });
   /**********************************
@@ -21,13 +16,45 @@ jQuery(document).ready(function($){
   //use function for when something is clicked
   function overlay_open(element) {
     element.scrollTop(0);
-    document.body.classList.add('noscroll');
+    element.css('overflow', 'auto');
+    element.fadeIn(200, bodyScroll_check);
 
   }
   function overlay_close(element) {
     element.css('overflow', 'hidden');
-    document.body.classList.remove('noscroll');
+    element.fadeOut(200, bodyScroll_check);
   }
+
+  function bodyScroll_check() {
+    var hamburgerMenu = $("#hamburger_menu");
+    var imageExpand = $("#image_expand");
+
+    var hamburgerMenuIsVisible = hamburgerMenu.is(":visible");
+    var imageExpandIsVisible = imageExpand.is(":visible");
+
+    if (hamburgerMenuIsVisible || imageExpandIsVisible) {
+      if (!document.body.classList.contains('noscroll')) {
+        document.body.classList.add('noscroll');
+      }
+      if (hamburgerMenuIsVisible && imageExpandIsVisible) {
+        imageExpand.css('overflow', 'hidden');
+      }
+      else {
+        imageExpand.css('overflow', 'auto');
+      }
+    }
+    else{
+      document.body.classList.remove('noscroll');
+    }
+
+    console.log("Hamburger menu visible: " + hamburgerMenuIsVisible);
+    console.log("Image Expand visible: " + imageExpandIsVisible);
+
+  }
+  //if any of these elements are visible, then make sure no scroll is applied (if (it hasn't been applied already)
+
+  //else if none of these elements are visible, remove that no scroll if it hasn't been removed already
+
   //put a noscroll class on the body to prevent it from scrolling
   //keep the overlay normal
   /**********************************
@@ -63,16 +90,33 @@ jQuery(document).ready(function($){
   /**********************************
               Image Expand
   ***********************************/
-  var docHeight;
+  /*var docHeight;
   var windowPos;
   var backgroundHeight;
   var imageHeight;
   var expandWidth;
   var percentage;
   var width;
-  var height;
+  var height;*/
 
-  $(".expand").click(function(){
+  //expand click
+  //pass the image to the src
+  $(".expand").click(function() {
+    var bg = this.src;
+    $("#expanded_image").attr('src', bg);
+
+    overlay_open($("#image_expand"));
+  });
+  $("#close_expand").click(function(){
+
+    overlay_close($("#image_expand"));
+    $("#expanded_image").css('background-image','');
+  });
+
+
+  //overlay closed
+
+  /*$(".expand").click(function(){
     var bg = this.src;
 
     windowPos = $(document).scrollTop() + 200;
@@ -110,10 +154,12 @@ jQuery(document).ready(function($){
     $("#image_expand").hide("fade");
     $("#expanded_image").css('background-image','');
   });
+
+  */
   /**********************************
             Window Resize
   ***********************************/
-  var windowWidth = window.innerWidth;
+  /* var windowWidth = window.innerWidth;
 
   $(window).resize(function(){
 
@@ -141,4 +187,5 @@ jQuery(document).ready(function($){
       }
     }
   });
+  */
 });
