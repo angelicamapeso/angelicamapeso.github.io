@@ -163,13 +163,19 @@ jQuery(document).ready(function($){
   /**********************************
               Hovers
   ***********************************/
-  $(".slide_hover").hover(function(){
-    $(".slide_text").css("color", "rgb(255,211,212)");
-  },
+    $(".slide_hover").hover(function() {
+      $(".slide_text_wrap .title").css("color", "rgb(255, 179, 185)");
+    },
     function() {
-      $(".slide_text").css("color", "rgb(255,255,255)");
+      $(".slide_text_wrap .title").css("color", "rgb(255,255,255)");
     });
-    $(".slide_text_wrap >h3").hover(function(){
+    $(".slide_text_wrap a").hover(function(){
+      $(".slide_text_wrap .title").css("color", "rgb(255, 143, 152)");
+    },
+    function() {
+      $(".slide_text_wrap .title").css("color", "rgb(255,255,255)");
+    });
+    /*$(".slide_text_wrap >h3").hover(function(){
       $(".slide_text").css("color", "rgb(255,211,212)");
     },
       function() {
@@ -180,16 +186,18 @@ jQuery(document).ready(function($){
     },
       function() {
         $(".slide_text").css("color", "rgb(255,255,255)");
-    });
-    $(".icon_link").hover(function(){
+    });*/
+    /*$(".icon_link").hover(function(){
       $(".slide_text").css("color", "rgb(255,211,212)");
     },
       function() {
         $(".slide_text").css("color", "rgb(255,255,255)");
-    });
+    });*/
     $(".icon").hover(function(){
-      jQuery(this).children("img").fadeTo("slow", 0.7);
+      jQuery(this).children("img").animate({bottom:'5px'},200);
+      jQuery(this).find("a .title").css("color", "rgb(255, 143, 152)");
     }, function(){
-      jQuery(this).children("img").fadeTo("slow", 1.0);
+      jQuery(this).children("img").animate({bottom:'-5px'},200);
+      jQuery(this).find("a .title").css("color", "rgb(255, 255, 255)");
     });
 });

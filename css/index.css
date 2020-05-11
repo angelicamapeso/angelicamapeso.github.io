@@ -129,6 +129,17 @@
 }
 */
 /****************************
+            TITLE AND SUBTITLE STYLE
+*****************************/
+.title {
+  font-weight:400;
+  font-size:200%;
+}
+.subtitle {
+  font-weight: 300;
+  font-size: 150%;
+}
+/****************************
             Flexbox
 *****************************/
 #slides, .slide{
@@ -321,7 +332,7 @@
 
 /****slides****/
 #mobile_slide{
-	background-image:linear-gradient(90deg, rgb(120,0,47), rgb(60, 0, 32));
+	background-color:rgb(120, 0, 47);
 
 	-webkit-justify-content: center;
 	-ms-flex-pack: center;
@@ -345,7 +356,8 @@
 	margin-top:5%;
 	text-align:center;
 }
-
+/******SLIDE TEXT****/
+/********************/
 .slide_text_wrap{
 	box-sizing:border-box;
 	height:80%;
@@ -359,14 +371,17 @@
 
 	padding-bottom:30px;
 }
-.slide_text_wrap h1,
-.slide_text_wrap p {
+.slide_text_wrap a{
+  color:white;
 	z-index:100;
 }
-.slide_text_wrap p {
+.slide_text_wrap a:hover .slide_text_wrap .title {
+  color: rgba(255,255,255, 0.8);
+}
+/*.slide_text_wrap p {
   font-weight: 300;
   font-size: 150%;
-}
+}*/
 #delish_slide{
 	background: url(../img/slideshow/delish_mobile.jpg);
 	background-size: cover;
@@ -514,21 +529,23 @@
 	margin:10px;
 }
 .icon>img{
+  position:relative;
 	width:100%;
 	height:auto;
 	border-radius:10px;
 }
+/******ICONS****/
+/********************/
 .icon_link{
   width: 90%;
 	padding-top:5px;
 	color:white;
 }
-.icon_link h1 {
+.icon_link .title {
   font-size: 150%;
 }
-.icon_link p {
+.icon_link .subtitle {
   font-size: 105%;
-  font-weight: 300;
 }
 /**********************************************************
                               Hover
@@ -582,12 +599,13 @@
 	#desktop_slide h3 {
 		padding-top:20px;
 	}
+  /******SLIDE TEXT****/
+  /********************/
 	.slide_text_wrap{
 		text-align:left;
 		height:90%;
 	}
-	.slide_text_wrap > h1,
-	.slide_text_wrap > p {
+	.slide_text_wrap a {
 		padding-left: 10%;
     width:40%;
 	}
