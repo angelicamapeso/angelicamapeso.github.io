@@ -364,7 +364,8 @@
 	z-index:100;
 }
 .slide_text_wrap p {
-  font-weight: 200;
+  font-weight: 300;
+  font-size: 150%;
 }
 #delish_slide{
 	background: url(../img/slideshow/delish_mobile.jpg);
@@ -518,6 +519,7 @@
 	border-radius:10px;
 }
 .icon_link{
+  width: 90%;
 	padding-top:5px;
 	color:white;
 }
@@ -526,7 +528,7 @@
 }
 .icon_link p {
   font-size: 105%;
-  font-weight: 200;
+  font-weight: 300;
 }
 /**********************************************************
                               Hover
@@ -571,7 +573,7 @@
 	}
   #desktop_slide p, #mobile_slide p {
       font-size: 150%;
-      font-weight: 200;
+      font-weight: 300;
   }
 	#desktop_slide >div{
 		position:relative;
