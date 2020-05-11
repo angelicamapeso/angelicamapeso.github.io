@@ -108,8 +108,16 @@ a {
 .image_section ul li p{
   font-weight:300;
 }
-.link{
+#display a, .design a, .process a,
+.about_display_text a{
+	margin-top:20px;
+	text-decoration:underline;
 	color:rgb(178,34,81);
+}
+#display a:hover, .design a:hover, .process a:hover,
+.about_display_text a:hover{
+  opacity:0.6;
+  filter:alpha(opacity=60);
 }
 /****************************
             TITLE AND SUBTITLE STYLE
