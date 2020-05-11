@@ -73,16 +73,16 @@ jQuery(document).ready(function($){
       $("#delish_button").css("background-color","rgba(255,255,255,0.3)");
     }
     if (currentId == "canadabuys_slide"){
-      $("#simplet_button").css("background-color","rgba(255,255,255,1)");
+      $("#canadabuys_button").css("background-color","rgba(255,255,255,1)");
     }
     else {
-      $("#simplet_button").css("background-color","rgba(255,255,255,0.3)");
+      $("#canadabuys_button").css("background-color","rgba(255,255,255,0.3)");
     }
     if (currentId== "naturelive_slide"){
-      $("#audio_button").css("background-color","rgba(255,255,255,1)");
+      $("#naturelive_button").css("background-color","rgba(255,255,255,1)");
     }
     else {
-      $("#audio_button").css("background-color","rgba(255,255,255,0.3)");
+      $("#naturelive_button").css("background-color","rgba(255,255,255,0.3)");
     }
   }
   function moveLeft(){
