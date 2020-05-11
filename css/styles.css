@@ -133,7 +133,7 @@ a {
 /****************************
             Transition
 *****************************/
-.transition {
+.transition, a {
 	-webkit-transition-property: opacity, background, background-color, alpha, color;
    -moz-transition-property: opacity, background, background-color, alpha, color;
      -o-transition-property: opacity, background, background-color, alpha, color;
