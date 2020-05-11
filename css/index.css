@@ -129,17 +129,6 @@
 }
 */
 /****************************
-            TITLE AND SUBTITLE STYLE
-*****************************/
-.title {
-  font-weight:400;
-  font-size:200%;
-}
-.subtitle {
-  font-weight: 300;
-  font-size: 150%;
-}
-/****************************
             Flexbox
 *****************************/
 #slides, .slide{

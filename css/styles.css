@@ -65,7 +65,7 @@ h1, p{
   font-weight:400;
 }
 h2, h3, h4, h5,h6 {
-  font-weight:200
+  font-weight:300
 }
 h1{
   font-size:200%;
@@ -110,6 +110,17 @@ a {
 }
 .link{
 	color:rgb(178,34,81);
+}
+/****************************
+            TITLE AND SUBTITLE STYLE
+*****************************/
+.title {
+  font-weight:400;
+  font-size:200%;
+}
+.subtitle {
+  font-weight: 300;
+  font-size: 150%;
 }
 /****************************
             Transition
