@@ -9,7 +9,7 @@
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
+a, abbr, acronym, address, big, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
@@ -58,7 +58,7 @@ table {
 /****************************
             Fonts
 *****************************/
-h1, h2, h3, h4,h5, h6, p, a, .italic, figcaption {
+h1, h2, h3, h4,h5, h6, p, a, figcaption {
   font-family:'Fira Sans', sans-serif;
 }
 h1, p{
@@ -66,9 +66,6 @@ h1, p{
 }
 h2, h3, h4, h5,h6 {
   font-weight:200
-}
-.italic{
-	font-style:italic;
 }
 h1{
   font-size:200%;
